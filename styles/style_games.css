@@ -1,0 +1,230 @@
+/* default */
+* {padding: 0;margin: 0;box-sizing: border-box;}
+:root {--blue: #3B2A9F;--orange: #FA8305;}
+body {background-color: var(--blue);color: white;font-family: poppins;}
+a {text-decoration: none;color: inherit;}
+/* font */
+@font-face {font-family: poppins;src: url(../assets/fonts/Poppins-Medium.ttf);}
+
+/* header */
+.header {padding: 10px 20px;}
+.header .logo {
+    float: left;
+    width: 20%;
+    padding: 5px 10px;
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.menu {
+    float: right;
+    width: 80%;
+    padding: 5px 10px;
+    text-align: right;
+}
+.menu_item {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 5px 20px;
+}
+.menu_item:hover {cursor: pointer;}
+.game_item {border-bottom: 5px solid var(--orange);}
+.theme_item {
+    background-color: var(--orange);
+    border-radius: 6px;
+}
+
+/* main */
+.main {
+    clear: both;
+    margin-top: 80px;
+    margin: auto;
+    width: 80%;
+}
+.top_main_left {
+    float: left;
+    width: 30%;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+#name {
+    color: var(--orange);
+    width: 90%;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+#head {
+    font-size: 40px;
+    width: 90%;
+    margin-bottom: 30px;
+}
+.top_main_right {
+    float: right;
+    width: 60%;
+}
+.top_main_right img {
+    width: 120%;
+    height: 550px;
+    top: 120px;
+    left: 700px;
+    margin-top: 30px;
+}
+.top_main_left #button {
+    background-color: var(--orange);
+    border-radius: 30px;
+    padding: 15px 30px;
+    margin-top: 60px;
+    border: none;
+    font-family: poppins;
+    color: white;
+    margin-bottom: 30px;
+}
+.work {
+    clear: both;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.slider1_item {
+    display: inline-block;
+    width: 25%;
+    background-color: black;
+    border-radius: 20px;
+    padding: 30px;
+    margin-right: 30px;
+    margin-bottom: 120px;
+}
+.slider1_item #color {
+    background-color: #31190D;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.midd {
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    padding: 0 30px;
+}
+.midd .left {
+    margin-top: 80px;
+    width: 48%;
+    float: left;
+    padding-right: 50px;
+    padding-left: 60px;
+}
+.midd .left img {
+    width: 100%;
+    height: 400px;
+    border-radius: 30px 30px 0 0;
+}
+.midd .right {
+    margin-top: 80px;
+    width: 48%;
+    float: right;
+    margin-right: 20px;
+}
+.text_left {
+    clear: both;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+.avatar {
+    display: inline-block;
+    width: 20%;
+    padding: 50px;
+    background-color: black;
+    border-radius: 20px;
+    margin: 10px;
+}
+.avatar img{
+    width: 100%;
+    height: 120px;
+}
+
+.left_text {
+    width: 50%;
+    margin: 50px 0;
+}
+.box {
+    margin: 50px;
+    padding: 25px;
+    background-color: #1C140F;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.box .box_left {
+    float: left;
+    width: 58%;
+    margin: 20px;
+}
+.box .box_right {
+    float: right;
+    width: 35%;
+}
+.box_right input {
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+.box_right button {
+    background-color: var(--orange);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* footer */
+.footer {
+    clear: both;
+    margin-top: 150px;
+    background-color: black;
+}
+.footer .top {
+    margin-top: 20px;
+    background-color: inherit;
+}
+.footer .top .foot_item {
+    float: left;
+    width: 25%;
+    padding: 60px;
+    padding-bottom: 30px;
+}
+.footer .foot_item img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+.footer .foot_item img:hover {cursor: pointer;}
+.footer .bottom {
+    clear: both;
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* responsive */
+@media only screen and (max-width: 855px) {
+    .top_main_left , .top_main_right {
+        display: block;
+        width: 100%;
+    }
+    .top_main_right img {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 30px;
+    }
+    .slider1_item {
+        display: block;
+        width: 100%;
+    }
+    .midd .left , .midd .right {
+        display: block;
+        width: 100%;
+    }
+    .avatar {
+        display: block;
+        width: 100%;
+    }
+}

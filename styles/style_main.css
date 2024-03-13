@@ -1,0 +1,254 @@
+/* default */
+* {padding: 0;margin: 0;box-sizing: border-box;}
+:root {--blue: #3B2A9F;--orange: #FA8305;}
+body {background-color: var(--blue);color: white;font-family: poppins;}
+a {text-decoration: none;color: inherit;}
+/* font */
+@font-face {font-family: poppins;src: url(../assets/fonts/Poppins-Medium.ttf);}
+
+/* header */
+.header {padding: 10px 20px;}
+.header .logo {
+  float: left;
+  width: 20%;
+  padding: 5px 10px;
+  margin-top: 15px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.menu {
+  float: right;
+  width: 80%;
+  padding: 5px 10px;
+  text-align: right;
+}
+.menu_item {
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 5px 20px;
+}
+.menu_item:hover {cursor: pointer;}
+.home_item {border-bottom: 5px solid var(--orange);}
+.theme_item {
+  background-color: var(--orange);
+  border-radius: 6px;
+}
+
+/* main */
+.main {
+  clear: both;
+  margin-top: 80px;
+  margin: auto;
+  width: 80%;
+}
+.top_main_left {
+  float: left;
+  width: 40%;
+  margin-top: 100px;
+}
+#name {
+  color: var(--orange);
+  width: 90%;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+#head {
+  font-size: 40px;
+  width: 90%;
+  margin-bottom: 30px;
+}
+.top_main_right {
+  float: right;
+  width: 60%;
+}
+.top_main_right img {
+  width: 100%;
+  max-width: 600px;
+}
+.top_main_left #button {
+  background-color: var(--orange);
+  border-radius: 30px;
+  padding: 15px 30px;
+  margin-top: 60px;
+  border: none;
+  font-family: poppins;
+  color: white;
+  margin-bottom: 30px;
+}
+.trend_main {clear: both;}
+.top_trend {
+  margin-top: 80px;
+  padding: 15px 30px;
+  font-size: 20px;
+}
+.top_trend_left {
+  float: left;
+  font-weight: bold;
+  padding-left: 0;
+}
+.top_trend_right {
+  float: right;
+  background-color: #5141AA;
+  border-radius: 10px;
+}
+.top_trend_right:hover {cursor: pointer;}
+.trend_slider {
+  clear: both;
+  text-align: center;
+}
+.trend_slider_item {
+  display: inline-block;
+  width: 24%;
+  padding: 20px;
+  margin-top: 20px;
+}
+.trend_slider_item img {
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+}
+.trend_slider_item div img {
+  width: 10%;
+  height: 20px;
+  color: white;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.mid_text1 {
+  clear: both;
+  margin: 80px auto;
+  width: 60%;
+  font-size: 35px;
+  text-align: center;
+}
+.left_text {
+  width: 50%;
+  margin: 50px 0;
+}
+.spider img{
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
+}
+.mid_text2 {
+  width: 50%;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.see_all {
+  clear: both;
+  background-color: #5141AA;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin: 50px auto;
+  text-align: center;
+  width: 10%;
+  border-radius: 20px;
+}
+.projects .row {
+  clear: both;
+  height: 200px;
+  margin-top: 25px;
+}
+.projects .item {
+  display: inline-block;
+  width: 30%;
+  height: 200px;
+  margin: 10px;
+}
+.projects .item img {
+  width: 80%;
+  height: 100%;
+  border-radius: 20px;
+}
+.box {
+  margin: 50px;
+  padding: 25px;
+  background-color: #1C140F;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.box .box_left {
+  float: left;
+  width: 58%;
+  margin: 20px;
+}
+.box .box_right {
+  float: right;
+  width: 35%;
+}
+.box_right input {
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+.box_right button {
+  background-color: var(--orange);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+/* footer */
+.footer {
+  clear: both;
+  margin-top: 150px;
+  background-color: black;
+}
+.footer .top {
+  margin-top: 20px;
+  background-color: inherit;
+}
+.footer .top .foot_item {
+  float: left;
+  width: 25%;
+  padding: 60px;
+  padding-bottom: 30px;
+}
+.footer .foot_item img {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+.footer .foot_item img:hover {cursor: pointer;}
+.footer .bottom {
+  clear: both;
+  padding: 20px;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* responsive */
+@media only screen and (max-width: 855px) {
+  .top_main_left {
+    display: block;
+    width: 100%;
+    margin-top: 100px;
+  }
+  .top_main_right {
+    display: block;
+    width: 100%;
+  }
+  .trend_slider_item {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .projects .item {
+    display: block;
+    width: 100%;
+  }
+  .projects .item img {
+    width: 80%;
+    height: 100%;
+  }
+  .box_left, .box_right {
+    display: block;
+    width: 100%;
+  }
+}
